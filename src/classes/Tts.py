@@ -1,4 +1,5 @@
 import os
+import sys
 
 from config import ROOT_DIR
 from TTS.utils.manage import ModelManager
@@ -15,7 +16,11 @@ class TTS:
         Returns:
             None
         """
-        venv_site_packages = "venv\\Lib\\site-packages"
+        if os.name == 'nt':
+            venv_site_packages = "venv\\Lib\\site-packages"
+        else:
+            python_version = f"python{sys.version_info.major}.{sys.version_info.minor}"
+            venv_site_packages = f"venv/lib/{python_version}/site-packages"
 
         # Path to the .models.json file
         models_json_path = os.path.join(
@@ -72,4 +77,3 @@ class TTS:
         self.synthesizer.save_wav(outputs, output_file)
 
         return output_file
-    
