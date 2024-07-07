@@ -36,7 +36,8 @@ Please install [Microsoft Visual C++ build tools](https://visualstudio.microsoft
 
 ```bash
 git clone https://github.com/fxgurv/YSG.git
-cp config.example.json config.json
+cd YSG
+cp example.config.json config.json
 python3 -m venv venv
 source venv/bin/activate
 pip install --upgrade pip
