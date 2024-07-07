@@ -35,29 +35,17 @@ Please install [Microsoft Visual C++ build tools](https://visualstudio.microsoft
 > ⚠️ If you are planning to reach out to scraped businesses per E-Mail, please first install the [Go Programming Language](https://golang.org/).
 
 ```bash
-git clone https://github.com/FujiwaraChoki/MoneyPrinterV2.git
-
-# Copy Example Configuration and fill out values in config.json
+git clone https://github.com/fxgurv/YSG.git
 cp config.example.json config.json
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+python3 src/main.py
 
-# Create a virtual environment
-python -m venv venv
 
 # Activate the virtual environment - Windows
 .\venv\Scripts\activate
-
-# Activate the virtual environment - Unix
-source venv/bin/activate
-
-# Install the requirements
-pip install -r requirements.txt
-```
-
-## Usage
-
-```bash
-# Run the application
-python src/main.py
 ```
 
 ## Documentation
