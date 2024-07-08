@@ -20,6 +20,8 @@
   "scraper_timeout": 300,
   "outreach_message_subject": "I have a question...",
   "outreach_message_body_file": "outreach_message.html",
+  "elevenlabs_api_key": "AIzaSyC6N1MVe9WmAFjWMNuXjlaLnYa8eO813tY",
+  "elevenlabs_voice_act": "Antoni"
   "gemini_api_key": "AIzaSyC6N1MVe9WmAFjWMNuXjlaLnYa8eO813tY",
   "assembly_ai_api_key": "e9c253a938184370becdf77f2a9e6a45",
   "font": "bold_font.ttf",
